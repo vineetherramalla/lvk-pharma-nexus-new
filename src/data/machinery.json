@@ -1,0 +1,310 @@
+[
+  {
+    "id": 1,
+    "name": "Glass Line Reactors (GLR)",
+    "capacity": "10 KL",
+    "quantity": 6,
+    "category": "Reactor"
+  },
+  {
+    "id": 2,
+    "name": "Crystallizer (GLR)",
+    "capacity": "5 KL",
+    "quantity": 1,
+    "category": "Crystallizer"
+  },
+  {
+    "id": 3,
+    "name": "Crystallizer (GLR)",
+    "capacity": "6 KL",
+    "quantity": 1,
+    "category": "Crystallizer"
+  },
+  {
+    "id": 4,
+    "name": "Graphite Condenser",
+    "capacity": "28 sqmm",
+    "quantity": 2,
+    "category": "Condenser"
+  },
+  {
+    "id": 5,
+    "name": "Graphite Condenser",
+    "capacity": "24 sqmm",
+    "quantity": 2,
+    "category": "Condenser"
+  },
+  {
+    "id": 6,
+    "name": "Compressor",
+    "capacity": "40 TR",
+    "quantity": 1,
+    "category": "Cooling"
+  },
+  {
+    "id": 7,
+    "name": "Compressor",
+    "capacity": "20 TR",
+    "quantity": 1,
+    "category": "Cooling"
+  },
+  {
+    "id": 8,
+    "name": "Boiler",
+    "capacity": "2 Ton",
+    "quantity": 1,
+    "category": "Heating"
+  },
+  {
+    "id": 9,
+    "name": "Crusher",
+    "capacity": "5 HP",
+    "quantity": 1,
+    "category": "Processing"
+  },
+  {
+    "id": 10,
+    "name": "Water Circulation Pumps",
+    "capacity": "3 HP",
+    "quantity": 2,
+    "category": "Pump"
+  },
+  {
+    "id": 11,
+    "name": "1440 RPM P P Pumps",
+    "capacity": "5 HP",
+    "quantity": 4,
+    "category": "Pump"
+  },
+  {
+    "id": 12,
+    "name": "PTFE Pumps",
+    "capacity": "5 HP",
+    "quantity": 1,
+    "category": "Pump"
+  },
+  {
+    "id": 13,
+    "name": "HDPE Tanks",
+    "capacity": "30 KL",
+    "quantity": 8,
+    "category": "Storage"
+  },
+  {
+    "id": 14,
+    "name": "HDPE Tanks",
+    "capacity": "20 KL",
+    "quantity": 1,
+    "category": "Storage"
+  },
+  {
+    "id": 15,
+    "name": "FRB Tanks",
+    "capacity": "20 KL",
+    "quantity": 2,
+    "category": "Storage"
+  },
+  {
+    "id": 16,
+    "name": "Chlorine Evaporator",
+    "capacity": "—",
+    "quantity": 1,
+    "category": "Processing"
+  },
+  {
+    "id": 17,
+    "name": "HDPE Scrubber",
+    "capacity": "500 Dia",
+    "quantity": 2,
+    "category": "Scrubber"
+  },
+  {
+    "id": 18,
+    "name": "HDPE Scrubber",
+    "capacity": "600 Dia",
+    "quantity": 2,
+    "category": "Scrubber"
+  },
+  {
+    "id": 19,
+    "name": "Aluminum Tank",
+    "capacity": "7 KL",
+    "quantity": 1,
+    "category": "Storage"
+  },
+  {
+    "id": 20,
+    "name": "Aluminum Tank",
+    "capacity": "30 KL",
+    "quantity": 1,
+    "category": "Storage"
+  },
+  {
+    "id": 21,
+    "name": "Aluminum Tank",
+    "capacity": "50 KL",
+    "quantity": 1,
+    "category": "Storage"
+  },
+  {
+    "id": 22,
+    "name": "60\" Centrifuge",
+    "capacity": "600 KGS",
+    "quantity": 1,
+    "category": "Centrifuge"
+  },
+  {
+    "id": 23,
+    "name": "48\" Centrifuge",
+    "capacity": "450 KGS",
+    "quantity": 2,
+    "category": "Centrifuge"
+  },
+  {
+    "id": 24,
+    "name": "Hoist",
+    "capacity": "1 Ton",
+    "quantity": 1,
+    "category": "Material Handling"
+  },
+  {
+    "id": 25,
+    "name": "Cooling Tower",
+    "capacity": "—",
+    "quantity": 1,
+    "category": "Cooling"
+  },
+  {
+    "id": 26,
+    "name": "Weighing Machine",
+    "capacity": "1 Ton",
+    "quantity": 1,
+    "category": "Measurement"
+  },
+  {
+    "id": 27,
+    "name": "Weighing Machine",
+    "capacity": "200 KGS",
+    "quantity": 1,
+    "category": "Measurement"
+  },
+  {
+    "id": 28,
+    "name": "Motors",
+    "capacity": "75 HP",
+    "quantity": 2,
+    "category": "Power"
+  },
+  {
+    "id": 29,
+    "name": "Transformer",
+    "capacity": "500 KVA",
+    "quantity": 1,
+    "category": "Power"
+  },
+  {
+    "id": 30,
+    "name": "Generator",
+    "capacity": "250 KVA",
+    "quantity": 1,
+    "category": "Power"
+  },
+  {
+    "id": 31,
+    "name": "Minus 20 Chiller Pump",
+    "capacity": "7.5 HP",
+    "quantity": 1,
+    "category": "Cooling"
+  },
+  {
+    "id": 32,
+    "name": "Minus 20 Condenser Pump",
+    "capacity": "10 HP",
+    "quantity": 1,
+    "category": "Cooling"
+  },
+  {
+    "id": 33,
+    "name": "Minus 20 Plant Circulation",
+    "capacity": "10 HP",
+    "quantity": 1,
+    "category": "Cooling"
+  },
+  {
+    "id": 34,
+    "name": "Minus 10 Chiller Pump",
+    "capacity": "5 HP",
+    "quantity": 1,
+    "category": "Cooling"
+  },
+  {
+    "id": 35,
+    "name": "Minus 10 Condenser Pump",
+    "capacity": "7.5 HP",
+    "quantity": 1,
+    "category": "Cooling"
+  },
+  {
+    "id": 36,
+    "name": "Minus 10 Plant Circulation",
+    "capacity": "7.5 HP",
+    "quantity": 1,
+    "category": "Cooling"
+  },
+  {
+    "id": 37,
+    "name": "Air Compressor",
+    "capacity": "2 HP",
+    "quantity": 1,
+    "category": "Cooling"
+  },
+  {
+    "id": 38,
+    "name": "Boiler ID Fan",
+    "capacity": "12.5 HP",
+    "quantity": 1,
+    "category": "Heating"
+  },
+  {
+    "id": 39,
+    "name": "Boiler FD Fan",
+    "capacity": "3 HP",
+    "quantity": 1,
+    "category": "Heating"
+  },
+  {
+    "id": 40,
+    "name": "Boiler Feed Motor Pump",
+    "capacity": "3 HP",
+    "quantity": 2,
+    "category": "Heating"
+  },
+  {
+    "id": 41,
+    "name": "RT Pump",
+    "capacity": "15 HP",
+    "quantity": 1,
+    "category": "Pump"
+  },
+  {
+    "id": 42,
+    "name": "RT Pump",
+    "capacity": "7.5 HP",
+    "quantity": 2,
+    "category": "Pump"
+  },
+  {
+    "id": 43,
+    "name": "Softener Water Pump",
+    "capacity": "1.5 HP",
+    "quantity": 1,
+    "category": "Water Treatment"
+  },
+  {
+    "id": 44,
+    "name": "Softener Tank",
+    "capacity": "5 KL",
+    "quantity": 1,
+    "category": "Water Treatment"
+  }
+]
