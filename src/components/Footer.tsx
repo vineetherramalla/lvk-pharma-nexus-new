@@ -3,10 +3,20 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import logo from "@/assets/lvk-logo.png";
 
 const Footer = () => {
+  const quickLinks = [
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about" }, // ✅ Fixed path
+    { name: "Manufacturing", path: "/manufacturing" },
+    { name: "Quality", path: "/quality" },
+    { name: "Products", path: "/products" },
+    { name: "Contact", path: "/contact" },
+  ];
+
   return (
     <footer className="bg-primary border-t border-primary-foreground/10">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
@@ -25,13 +35,13 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-primary-foreground mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              {["Home", "About Us", "Manufacturing", "Quality", "Products", "Contact"].map((item) => (
-                <li key={item}>
+              {quickLinks.map((link) => (
+                <li key={link.name}>
                   <Link
-                    to={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "-")}`}
+                    to={link.path}
                     className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                   >
-                    {item}
+                    {link.name}
                   </Link>
                 </li>
               ))}
@@ -48,7 +58,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2 text-sm text-primary-foreground/80">
                 <Phone className="h-4 w-4 flex-shrink-0 text-primary-foreground" />
-                <span>+91 XXX XXX XXXX</span>
+                <span>+91 799 354 2906</span>
               </li>
               <li className="flex items-center gap-2 text-sm text-primary-foreground/80">
                 <Mail className="h-4 w-4 flex-shrink-0 text-primary-foreground" />

@@ -54,7 +54,7 @@ const Contact = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-muted-foreground">+91 XXX XXX XXXX</p>
+                  <p className="text-sm text-muted-foreground">+91 799 354 2906</p>
                   <p className="text-xs text-muted-foreground mt-2">
                     Mon - Sat, 9:00 AM - 6:00 PM IST
                   </p>
