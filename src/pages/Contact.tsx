@@ -10,7 +10,9 @@ const Contact = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10">
+      <section className="py-20 bg-center bg-cover  bg-no-repeat" style={{
+    backgroundImage: `url('/contact.jpg')`,
+  }}>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">

@@ -141,26 +141,44 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="bg-gradient-to-br from-primary via-primary/90 to-secondary text-primary-foreground rounded-2xl p-12 text-center shadow-xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to Partner with Us?
-            </h2>
-            <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
-              Experience manufacturing excellence, quality assurance, and prompt delivery for your pharmaceutical needs
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                <Link to="/contact">Get in Touch</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                <Link to="/manufacturing">View Our Facilities</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+<section
+  className="py-20 bg-cover bg-center bg-no-repeat relative"
+  style={{
+    backgroundImage: `url('/src/assets/ReadytoPartnerwithUs.jpg')`,
+  }}
+>
+  
+
+  <div className="container mx-auto px-4 relative z-10"  >
+    <div className="rounded-2xl p-12 text-center text-primary-foreground">
+      <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        Ready to Partner with Us?
+      </h2>
+      <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
+        Experience manufacturing excellence, quality assurance, and prompt delivery for your pharmaceutical needs
+      </p>
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button
+          asChild
+          size="lg"
+          variant="outline"
+          className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+        >
+          <Link to="/contact">Get in Touch</Link>
+        </Button>
+        <Button
+          asChild
+          size="lg"
+          variant="outline"
+          className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+        >
+          <Link to="/manufacturing">View Our Facilities</Link>
+        </Button>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       <Footer />
     </div>

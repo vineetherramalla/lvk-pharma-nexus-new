@@ -4,7 +4,9 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat" style={{
+    backgroundImage: `url('/home.jpg')`,
+  }}>
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10" />
       
