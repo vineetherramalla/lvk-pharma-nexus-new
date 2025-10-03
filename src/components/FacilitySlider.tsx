@@ -29,16 +29,14 @@ const FacilitySlider: React.FC = () => {
   return (
     <section className="py-12 bg-muted/20">
       <div className="container mx-auto px-4">
-        
-
         <Slider {...settings}>
           {images.map((img, idx) => (
             <div key={idx} className="px-2">
-              <div className="w-full h-48 md:h-60 lg:h-52 overflow-hidden rounded-lg shadow-md">
+              <div className="w-full rounded-lg shadow-md overflow-hidden">
                 <img
                   src={img}
                   alt={`Facility ${idx + 1}`}
-                  className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
+                  className="w-full h-auto max-h-60 sm:max-h-72 md:max-h-60 lg:max-h-52 object-cover object-center transition-transform duration-300 hover:scale-105"
                 />
               </div>
             </div>
