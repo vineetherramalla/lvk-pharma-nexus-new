@@ -5,17 +5,9 @@ import { Button } from "@/components/ui/button";
 const Hero = () => {
   return (
     <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat" style={{
-    backgroundImage: `url('/home.jpg')`,
+    backgroundImage: `url('/home-bg.jpg')`,
   }}>
-      {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10" />
       
-      {/* Pattern Overlay */}
-      <div className="absolute inset-0 opacity-5" style={{
-        backgroundImage: `radial-gradient(circle at 25% 25%, hsl(var(--primary)) 1px, transparent 1px),
-                         radial-gradient(circle at 75% 75%, hsl(var(--secondary)) 1px, transparent 1px)`,
-        backgroundSize: '50px 50px'
-      }} />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8 py-20">
