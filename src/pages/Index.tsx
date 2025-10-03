@@ -139,7 +139,7 @@ const Index = () => {
 <section
   className="py-20 bg-cover bg-center bg-no-repeat relative"
   style={{
-    backgroundImage: `url('/src/assets/ReadytoPartnerwithUs.jpg')`,
+    backgroundImage: `url('/ReadytoPartnerwithUs.jpg')`,
   }}
 >
   {/* Optional: dark overlay for contrast */}
