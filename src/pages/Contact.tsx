@@ -10,20 +10,27 @@ const Contact = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-20 bg-center bg-cover  bg-no-repeat" style={{
+      <section
+  className="py-20 bg-center bg-cover bg-no-repeat relative"
+  style={{
     backgroundImage: `url('/contact.jpg')`,
-  }}>
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Get in Touch
-            </h1>
-            <p className="text-lg text-muted-foreground">
-              Have questions about our products or services? We're here to help.
-            </p>
-          </div>
-        </div>
-      </section>
+  }}
+>
+  {/* Optional: dark overlay for contrast */}
+  <div className="absolute inset-0 bg-black/60" />
+
+  <div className="container mx-auto px-4 relative z-10">
+    <div className="max-w-4xl mx-auto text-center">
+      <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+        Get in Touch
+      </h1>
+      <p className="text-lg text-gray-200">
+        Have questions about our products or services? We're here to help.
+      </p>
+    </div>
+  </div>
+</section>
+
 
       {/* Contact Section */}
       <section className="py-16">
@@ -81,8 +88,8 @@ const Contact = () => {
 
             {/* Google Maps */}
             <Card className="border-border overflow-hidden">
-              <CardHeader>
-                <CardTitle className="text-center">Our Location</CardTitle>
+              <CardHeader style={{ backgroundColor: '#00474d' }}>
+                <CardTitle className="text-white text-center">Our Location</CardTitle>
               </CardHeader>
               <CardContent className="p-0">
                 <iframe 

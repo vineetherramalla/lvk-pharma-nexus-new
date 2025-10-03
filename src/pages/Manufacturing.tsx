@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import MachineryCard from "@/components/MachineryCard";
 import { Button } from "@/components/ui/button";
 import machineryData from "@/data/machinery.json";
+import ModernizationCarousel from "@/components/ModernizationCarousel";
 
 const Manufacturing = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
@@ -19,38 +20,46 @@ const Manufacturing = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 bg-cover bg-center bg-no-repeat" style={{
+      <section
+  className="py-20 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 bg-cover bg-center bg-no-repeat relative"
+  style={{
     backgroundImage: `url('/manufacturingbg.jpg')`,
-  }}>
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Manufacturing Excellence
-            </h1>
-            <p className="text-lg text-muted-foreground mb-8">
-              State-of-the-art equipment and advanced technology for pharmaceutical chemical production
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              <div className="bg-background/50 backdrop-blur-sm border border-border rounded-lg p-4">
-                <p className="text-3xl font-bold text-primary">44+</p>
-                <p className="text-sm text-muted-foreground">Equipment Units</p>
-              </div>
-              <div className="bg-background/50 backdrop-blur-sm border border-border rounded-lg p-4">
-                <p className="text-3xl font-bold text-secondary">4 Acres</p>
-                <p className="text-sm text-muted-foreground">Facility Size</p>
-              </div>
-              <div className="bg-background/50 backdrop-blur-sm border border-border rounded-lg p-4">
-                <p className="text-3xl font-bold text-accent">900T</p>
-                <p className="text-sm text-muted-foreground">Max Capacity/mo</p>
-              </div>
-              <div className="bg-background/50 backdrop-blur-sm border border-border rounded-lg p-4">
-                <p className="text-3xl font-bold text-primary">2022</p>
-                <p className="text-sm text-muted-foreground">Established</p>
-              </div>
-            </div>
-          </div>
+  }}
+>
+  {/* Optional: Add dark overlay for contrast */}
+  <div className="absolute inset-0 bg-black/60" />
+
+  <div className="container mx-auto px-4 relative z-10">
+    <div className="max-w-4xl mx-auto text-center">
+      <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+        Manufacturing Excellence
+      </h1>
+      <p className="text-lg text-gray-200 mb-8">
+        State-of-the-art equipment and advanced technology for pharmaceutical chemical production
+      </p>
+
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4">
+          <p className="text-3xl font-bold text-white">44+</p>
+          <p className="text-sm text-gray-300">Equipment Units</p>
         </div>
-      </section>
+        <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4">
+          <p className="text-3xl font-bold text-white">4 Acres</p>
+          <p className="text-sm text-gray-300">Facility Size</p>
+        </div>
+        <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4">
+          <p className="text-3xl font-bold text-white">900T</p>
+          <p className="text-sm text-gray-300">Max Capacity/month</p>
+        </div>
+        <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4">
+          <p className="text-3xl font-bold text-white">2022</p>
+          <p className="text-sm text-gray-300">Established</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Machinery Section */}
       <section className="py-16">
@@ -100,46 +109,9 @@ const Manufacturing = () => {
 
       {/* Modernization Highlights */}
       <section className="py-16 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-foreground mb-8 text-center">
-              Plant Modernization Highlights
-            </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              {[
-                {
-                  title: "Advanced Condensers",
-                  description: "Replaced lead condensers with modern graphite condensers for better efficiency",
-                },
-                {
-                  title: "Automated Crystallization",
-                  description: "State-of-the-art crystallizers for consistent product quality",
-                },
-                {
-                  title: "Modern Centrifuges",
-                  description: "Bag lifting centrifuges for improved safety and efficiency",
-                },
-                {
-                  title: "Enhanced Scrubbing",
-                  description: "Modernized scrubbing system for better yield and pollution control",
-                },
-                {
-                  title: "Complete Insulation",
-                  description: "All equipment insulated for optimal temperature control",
-                },
-                {
-                  title: "Quality Monitoring",
-                  description: "Real-time quality monitoring systems at all production stages",
-                },
-              ].map((item, idx) => (
-                <div key={idx} className="bg-background border border-border rounded-lg p-6 hover:shadow-lg transition-shadow">
-                  <h3 className="font-semibold text-foreground mb-2">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        
+        <ModernizationCarousel />
+
       </section>
 
       <Footer />

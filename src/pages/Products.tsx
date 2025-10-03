@@ -37,24 +37,35 @@ const Products = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 bg-cover bg-no-repeat" style={{
+      <section
+  className="py-20 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 bg-cover bg-no-repeat relative"
+  style={{
     backgroundImage: `url('/product.jpg')`,
-  }}>
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2 mb-6">
-              <Beaker className="h-4 w-4 text-primary" />
-              <span className="text-sm font-medium text-primary">Pharmaceutical Chemicals</span>
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Our Products
-            </h1>
-            <p className="text-lg text-muted-foreground">
-              High-quality chemical intermediates serving pharmaceutical and industrial sectors
-            </p>
-          </div>
-        </div>
-      </section>
+  }}
+>
+  {/* Optional: dark overlay for better readability */}
+  <div className="absolute inset-0 bg-black/60" />
+
+  <div className="container mx-auto px-4 relative z-10">
+    <div className="max-w-4xl mx-auto text-center">
+      <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-6">
+        <Beaker className="h-4 w-4 text-white" />
+        <span className="text-sm font-medium text-white">
+          Pharmaceutical Chemicals
+        </span>
+      </div>
+
+      <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+        Our Products
+      </h1>
+
+      <p className="text-lg text-gray-200">
+        High-quality chemical intermediates serving pharmaceutical and industrial sectors
+      </p>
+    </div>
+  </div>
+</section>
+
 
       {/* Main Product Section */}
       <section className="py-16">

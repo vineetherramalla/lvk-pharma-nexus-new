@@ -83,10 +83,19 @@ export default {
             height: "0",
           },
         },
+        // 🔑 ADDED: Keyframes for the continuous horizontal scroll (marquee effect)
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          // Moves the content 50% to the left to seamlessly transition to the duplicated content
+          '100%': { transform: 'translateX(-50%)' }, 
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        // 🔑 ADDED: The animation for the carousel
+        // '30s' controls the speed. 'linear infinite' ensures smooth, endless looping.
+        marquee: 'marquee 30s linear infinite', 
       },
     },
   },

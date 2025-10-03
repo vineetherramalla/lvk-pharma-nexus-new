@@ -9,20 +9,27 @@ const About = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 bg-cover bg-no-repeat" style={{
+      <section
+  className="py-20 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 bg-cover bg-no-repeat relative"
+  style={{
     backgroundImage: `url('/aboutus.jpg')`,
-  }}>
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">n
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              About LVK Pharma
-            </h1>
-            <p className="text-lg text-muted-foreground">
-              Specializing in the production of high-quality chemical compounds with state-of-the-art manufacturing excellence
-            </p>
-          </div>
-        </div>
-      </section>
+  }}
+>
+  {/* Optional: add a dark overlay for better contrast */}
+  <div className="absolute inset-0 bg-black/60" />
+
+  <div className="container mx-auto px-4 relative z-10">
+    <div className="max-w-4xl mx-auto text-center">
+      <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+        About LVK Pharma
+      </h1>
+      <p className="text-lg text-gray-200">
+        Specializing in the production of high-quality chemical compounds with state-of-the-art manufacturing excellence
+      </p>
+    </div>
+  </div>
+</section>
+
 
       {/* Company Overview */}
       <section className="py-16">

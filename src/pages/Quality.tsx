@@ -39,24 +39,34 @@ const Quality = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 bg-cover bg-center bg-no-repeat" style={{
+      <section
+  className="py-20 bg-gradient-to-br from-primary/10 via-secondary/5 to-accent/10 bg-cover bg-center bg-no-repeat relative"
+  style={{
     backgroundImage: `url('/QUALITY ANALYSIS SECTION.jpg')`,
-  }}>
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2 mb-6">
-              <ShieldCheck className="h-4 w-4 text-primary" />
-              <span className="text-sm font-medium text-primary">International Standards Compliant</span>
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-              Quality & Compliance
-            </h1>
-            <p className="text-lg text-muted-foreground">
-              Uncompromising quality standards with certified processes and rigorous testing protocols
-            </p>
-          </div>
-        </div>
-      </section>
+  }}
+>
+  {/* Optional dark overlay for better contrast */}
+  <div className="absolute inset-0 bg-black/60" />
+
+  <div className="container mx-auto px-4 relative z-10">
+    <div className="max-w-4xl mx-auto text-center">
+      <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-6">
+        <ShieldCheck className="h-4 w-4 text-white" />
+        <span className="text-sm font-medium text-white">
+          International Standards Compliant
+        </span>
+      </div>
+
+      <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+        Quality & Compliance
+      </h1>
+
+      <p className="text-lg text-gray-200">
+        Uncompromising quality standards with certified processes and rigorous testing protocols
+      </p>
+    </div>
+  </div>
+</section>
 
       {/* Certifications */}
       <section className="py-16">

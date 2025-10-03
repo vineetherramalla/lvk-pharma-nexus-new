@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import FacilitySlider from "@/components/FacilitySlider";
 
 const Index = () => {
   const features = [
@@ -127,18 +128,12 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl mx-auto">
-            {clients.map((client, idx) => (
-              <div
-                key={idx}
-                className="bg-background border border-border rounded-lg p-6 text-center hover:shadow-md transition-shadow"
-              >
-                <p className="font-medium text-foreground">{client}</p>
-              </div>
-            ))}
-          </div>
+          <FacilitySlider />
+
+          
         </div>
       </section>
+
 
       {/* CTA Section */}
 <section
@@ -147,7 +142,8 @@ const Index = () => {
     backgroundImage: `url('/src/assets/ReadytoPartnerwithUs.jpg')`,
   }}
 >
-  
+  {/* Optional: dark overlay for contrast */}
+  <div className="absolute inset-0 bg-black/60" />
 
   <div className="container mx-auto px-4 relative z-10"  >
     <div className="rounded-2xl p-12 text-center text-primary-foreground">
@@ -180,6 +176,8 @@ const Index = () => {
 </section>
 
 
+
+      
       <Footer />
     </div>
   );
