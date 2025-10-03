@@ -3,6 +3,9 @@ import Footer from "@/components/Footer";
 import { Beaker, Building2, Users } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+
 
 const Products = () => {
   const mainProduct = {
@@ -197,12 +200,9 @@ const Products = () => {
                   Contact us for detailed specifications, pricing, and delivery schedules. We offer competitive rates and flexible credit terms for qualified customers.
                 </p>
                 <div className="pt-4">
-                  <a
-                    href="/contact"
-                    className="inline-flex items-center justify-center rounded-md bg-primary px-8 py-3 text-sm font-medium text-primary-foreground shadow hover:bg-primary/90 transition-colors"
-                  >
-                    Get in Touch
-                  </a>
+                  <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all">
+                      <Link to="/contact">Get In Touch </Link>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
